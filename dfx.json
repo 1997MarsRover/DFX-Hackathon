@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "medsync_backend": {
+      "candid": "src/medsync_backend/medsync_backend.did",
+      "package": "medsync_backend",
+      "type": "rust"
+    },
+    "medsync_frontend": {
+      "dependencies": [
+        "medsync_backend"
+      ],
+      "source": [
+        "src/medsync_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

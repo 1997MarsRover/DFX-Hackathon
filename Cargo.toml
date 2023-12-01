@@ -1,0 +1,4 @@
+[workspace]
+members = [
+    "src/medsync_backend",
+]

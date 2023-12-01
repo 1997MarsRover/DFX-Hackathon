@@ -1,0 +1,19 @@
+[package]
+name = ¨medsync¨
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = [¨src/medsync_backend¨]
+resolver = "2" 
+
+[lib]
+crate-type = [¨cdylib¨]
+
+[dependencies]
+candid = ¨0.8¨
+ic-cdk = ¨0.7¨
+ic-cdk-timers = ¨0.1¨
+memchr = ¨2.6.4¨
